@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name='track_ground'>
+        <static>true</static>
+        <link name='link_ground'>
+            <visual name='visual_ground'>
+                <geometry>
+                    <plane>
+                        <normal>0 0 1</normal>
+                        <size>20 20</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>file://media/materials/scripts/gazebo.material</uri>
+                        <name>Gazebo/Black</name>
+                    </script>
+                </material>
+            </visual>
+            <collision name='collision'>
+                <geometry>
+                    <plane>
+                    <normal>0 0 1</normal>
+                    <size>20 20</size>
+                    </plane>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

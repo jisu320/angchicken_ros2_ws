@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name='track_sample'>
+        <static>true</static>
+        <link name='link_ground'>
+            <visual name='visual_ground'>
+                <geometry>
+                    <plane>
+                        <normal>0 0 1</normal>
+                        <size>10 10</size>
+                    </plane>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>model://track_sample/materials/scripts</uri>
+                        <uri>model://track_sample/materials/textures</uri>
+                        <name>TrackSample/Image</name>
+                    </script>
+                </material>
+            </visual>
+            <collision name='collision'>
+                <geometry>
+                    <plane>
+                    <normal>0 0 1</normal>
+                    <size>10 10</size>
+                    </plane>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
